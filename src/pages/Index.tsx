@@ -4,10 +4,10 @@ import { FeaturedArgument } from "@/components/FeaturedArgument";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Hero />
-      <FeaturedArgument />
       <Features />
+      <FeaturedArgument />
     </div>
   );
 };
