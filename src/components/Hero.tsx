@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="py-24 px-6 min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-24 px-6 min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-background to-secondary">
       <div className="container max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

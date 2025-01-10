@@ -19,7 +19,7 @@ export function Features() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-secondary/20">
+    <section className="py-24 px-6 bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter mb-4">Featured Arguments</h2>
