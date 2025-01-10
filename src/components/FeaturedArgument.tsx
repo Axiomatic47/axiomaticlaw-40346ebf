@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 
 export function FeaturedArgument() {
   return (
-    <section className="py-16 px-6 bg-gradient-to-b from-secondary to-background">
+    <section className="py-8 px-6 bg-gradient-to-b from-secondary to-background">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <h2 className="text-3xl font-bold tracking-tighter mb-8 font-serif text-white text-center">Featured Work</h2>
           <Card className="glass-card">
             <CardHeader>
               <CardTitle className="text-2xl md:text-3xl mb-4 font-serif text-white">
