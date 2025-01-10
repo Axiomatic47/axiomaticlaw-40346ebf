@@ -1,5 +1,22 @@
 import { Discipline } from "@/types/content";
 
+const generateSections = () => {
+  return Array.from({ length: 10 }, (_, i) => ({
+    id: `section-${i + 1}`,
+    title: `Section ${i + 1}`,
+    content: `This is the content for Section ${i + 1}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+  }));
+};
+
+const generateCompositions = () => {
+  return Array.from({ length: 6 }, (_, i) => ({
+    id: `composition-${i + 1}`,
+    title: `Composition ${i + 1}`,
+    description: `Description for Composition ${i + 1}. This is a placeholder description that outlines the main themes and topics covered in this composition.`,
+    sections: generateSections()
+  }));
+};
+
 export const disciplines: Discipline[] = [
   {
     id: "law",
@@ -115,7 +132,8 @@ needed to restore balance where corporate prerogatives have encroached upon the 
 democratic ideals.`
           }
         ]
-      }
+      },
+      ...generateCompositions()
     ]
   },
   {
@@ -134,7 +152,8 @@ democratic ideals.`
             content: "The study of metaphysics begins with questioning the nature of reality itself..."
           }
         ]
-      }
+      },
+      ...generateCompositions()
     ]
   },
   {
@@ -188,7 +207,8 @@ democratic ideals.`
             content: "Despite their shared heritage and ethical teachings, Judaism, Christianity, and Islam diverge in fundamental and often irreconcilable ways..."
           }
         ]
-      }
+      },
+      ...generateCompositions()
     ]
   }
 ];
