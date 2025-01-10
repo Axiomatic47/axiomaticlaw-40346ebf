@@ -26,7 +26,8 @@ export function PageNavigation() {
           </Button>
         </Link>
       ) : (
-        <div /> {/* Empty div for spacing */}
+        // Empty div for spacing
+        <div />
       )}
       {nextPage ? (
         <Link to={nextPage}>
@@ -36,7 +37,8 @@ export function PageNavigation() {
           </Button>
         </Link>
       ) : (
-        <div /> {/* Empty div for spacing */}
+        // Empty div for spacing
+        <div />
       )}
     </div>
   );
