@@ -5,19 +5,19 @@
 @layer base {
   :root {
     --background: 222 47% 11%;
-    --foreground: 0 0% 98%;
+    --foreground: 0 0% 100%;
     --card: 222 47% 11%;
-    --card-foreground: 0 0% 98%;
+    --card-foreground: 0 0% 100%;
     --popover: 222 47% 11%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
     --primary-foreground: 222 47% 11%;
     --secondary: 217 32% 17%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 217 32% 17%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 0 0% 90%;
     --accent: 217 32% 17%;
-    --accent-foreground: 0 0% 98%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 217 32% 17%;
@@ -33,6 +33,7 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: "Crimson Text", Georgia, serif;
   }
 }
 
@@ -42,4 +43,10 @@
 
 .hover-lift {
   @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+/* Add serif font styling for the main content */
+.prose-law {
+  @apply prose-lg prose-invert max-w-none;
+  font-family: "Crimson Text", Georgia, serif;
 }

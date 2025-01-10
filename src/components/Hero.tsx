@@ -11,10 +11,10 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter animate-fade-in font-serif text-white">
             Constitutional Philosophy Forum
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up">
+          <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto animate-fade-in-up font-serif">
             Explore profound legal and philosophical arguments about constitutional rights, personhood, and democracy.
           </p>
           <div className="flex justify-center gap-4 pt-6">

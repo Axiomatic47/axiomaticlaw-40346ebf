@@ -22,8 +22,8 @@ export function Features() {
     <section className="py-24 px-6 bg-secondary">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Featured Arguments</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tighter mb-4 font-serif text-white">Featured Arguments</h2>
+          <p className="text-white/80 max-w-2xl mx-auto font-serif">
             Discover compelling legal and philosophical perspectives on constitutional rights and personhood.
           </p>
         </div>
@@ -37,11 +37,11 @@ export function Features() {
             >
               <Card className="h-full glass-card hover-lift">
                 <CardHeader>
-                  <CardTitle>{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
+                  <CardTitle className="font-serif text-white">{feature.title}</CardTitle>
+                  <CardDescription className="text-white/70">{feature.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="link" className="mt-4">
+                  <Button variant="link" className="mt-4 text-white hover:text-white/80">
                     Read More →
                   </Button>
                 </CardContent>
