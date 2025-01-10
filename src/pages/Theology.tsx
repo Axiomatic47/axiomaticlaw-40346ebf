@@ -50,6 +50,30 @@ const Theology = () => {
             </section>
 
             <section className="mb-8">
+              <h3 className="text-2xl text-white mb-4">4. The Concept of Salvation and Afterlife</h3>
+              <p className="text-white/90">
+                The concept of salvation and the afterlife represents another area where these faiths diverge. In Christianity, salvation is achieved through faith in Jesus Christ as the Son of God and the Savior of humanity. The doctrines of original sin and atonement through Jesus' sacrificial death are central, with belief in Christ seen as the path to eternal life with God.
+              </p>
+              <p className="text-white/90 mt-4">
+                Islam rejects the concept of original sin and teaches that salvation is attained through submission to God's will (Islam) and through righteous deeds. Judaism places less emphasis on the afterlife compared to Christianity and Islam, with salvation often understood through adherence to the covenant with God and the performance of good deeds (mitzvot).
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h3 className="text-2xl text-white mb-4">5. Prophethood and Authority</h3>
+              <p className="text-white/90">
+                The understanding of prophethood and religious authority varies significantly. Judaism recognizes a line of prophets, with Moses considered the greatest. Christianity sees Jesus as the culmination of prophecy and the Son of God. Islam recognizes Muhammad as the final prophet, the Seal of the Prophets, with his revelations as the ultimate guide for humanity.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h3 className="text-2xl text-white mb-4">6. Apparent Shortcomings and Ethical Contradictions</h3>
+              <p className="text-white/90">
+                Each of the Abrahamic religions has faced criticism for actions that seem to contradict their divine values. The Crusades in Christianity, certain interpretations of Jihad in Islam, and historical actions in Judaism have all raised questions about the application of their ethical mandates.
+              </p>
+            </section>
+
+            <section className="mb-8">
               <h3 className="text-2xl text-white mb-4">Conclusion</h3>
               <p className="text-white/90">
                 Despite their shared heritage and ethical teachings, Judaism, Christianity, and Islam diverge in fundamental and often irreconcilable ways. Their differences regarding the nature of God, the role of Jesus, the status of scripture, the concept of salvation, and the authority of prophets create theological boundaries that are not easily bridged. Each religion upholds a unique narrative that it views as the ultimate truth, making reconciliation without the compromise of core beliefs appear improbable.
