@@ -1,37 +1,32 @@
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-export const Hero = () => {
+export function Hero() {
   return (
-    <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/5 pointer-events-none" />
-      <div className="container mx-auto px-4">
+    <section className="py-24 px-6 min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-background to-secondary/20">
+      <div className="container max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center"
+          className="space-y-6"
         >
-          <span className="inline-block px-3 py-1 mb-6 text-sm font-medium bg-primary/5 rounded-full animate-fade-in">
-            Welcome to the Future
-          </span>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight animate-fade-in">
-            Create Something
-            <span className="text-primary/90"> Beautiful</span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter animate-fade-in">
+            Constitutional Philosophy Forum
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in">
-            Discover a new way of building digital experiences with our innovative platform
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up">
+            Explore profound legal and philosophical arguments about constitutional rights, personhood, and democracy.
           </p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:opacity-90 transition-opacity">
-              Get Started
-            </button>
-          </motion.div>
+          <div className="flex justify-center gap-4 pt-6">
+            <Button size="lg" className="animate-fade-in">
+              Explore Arguments
+            </Button>
+            <Button size="lg" variant="outline" className="animate-fade-in">
+              Submit Your Thesis
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
   );
-};
+}
