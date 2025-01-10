@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
+import { PageNavigation } from "@/components/PageNavigation";
 
 const Theology = () => {
   return (
@@ -82,6 +83,7 @@ const Theology = () => {
           </article>
         </div>
       </div>
+      <PageNavigation />
     </div>
   );
 };

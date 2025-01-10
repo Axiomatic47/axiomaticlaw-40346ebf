@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
+import { PageNavigation } from "@/components/PageNavigation";
 
 const Philosophy = () => {
   return (
@@ -12,6 +13,7 @@ const Philosophy = () => {
           </p>
         </div>
       </div>
+      <PageNavigation />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { FeaturedArgument } from "@/components/FeaturedArgument";
+import { PageNavigation } from "@/components/PageNavigation";
 
 const Law = () => {
   return (
@@ -14,6 +15,7 @@ const Law = () => {
         </div>
         <FeaturedArgument />
       </div>
+      <PageNavigation />
     </div>
   );
 };
