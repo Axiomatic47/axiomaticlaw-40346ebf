@@ -6,11 +6,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FeaturedArgument } from "@/components/FeaturedArgument";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
+      <FeaturedArgument />
       <section className="py-24 px-6 bg-secondary">
         <div className="container mx-auto">
           <div className="text-center mb-12">
