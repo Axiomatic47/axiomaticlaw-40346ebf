@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -17,13 +18,22 @@ export function Hero() {
           <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto animate-fade-in-up font-serif">
             Explore profound legal and philosophical arguments about constitutional rights, personhood, and democracy.
           </p>
-          <div className="flex justify-center gap-4 pt-6">
-            <Button size="lg" className="animate-fade-in">
-              Explore Arguments
-            </Button>
-            <Button size="lg" variant="outline" className="animate-fade-in">
-              Submit Your Thesis
-            </Button>
+          <div className="flex flex-wrap justify-center gap-4 pt-6">
+            <Link to="/law">
+              <Button size="lg" className="animate-fade-in">
+                Law
+              </Button>
+            </Link>
+            <Link to="/philosophy">
+              <Button size="lg" variant="outline" className="animate-fade-in">
+                Philosophy
+              </Button>
+            </Link>
+            <Link to="/theology">
+              <Button size="lg" variant="outline" className="animate-fade-in">
+                Theology
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
