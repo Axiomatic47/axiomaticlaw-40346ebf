@@ -1,17 +1,40 @@
 {
+  "type": "discipline",
   "id": "law",
-  "title": "Law",
-  "description": "Explore legal theory and constitutional interpretations",
+  "title": "Legal Theory & Constitutional Law",
+  "description": "Explore foundational legal texts and constitutional theory, examining the philosophical underpinnings of justice and law.",
   "compositions": [
     {
       "id": "constitutional-rights",
-      "title": "The Indivisibility of Constitutional Rights",
-      "description": "An analysis of the holistic nature of constitutional personhood",
+      "title": "Constitutional Rights and Personhood",
+      "description": "An analysis of the indivisibility of constitutional rights and their relation to personhood",
       "sections": [
         {
           "id": "introduction",
           "title": "Introduction",
-          "content": "At the heart of the Constitution lies the indivisible and impartial nature of personhood..."
+          "content": "At the heart of the Constitution lies the indivisible and impartial nature of personhood. Constitutional rights are not granted by the Constitution; rather, they are recognized as inherent to the existence of natural persons and are respected and protected within the constitutional framework. These rights are not selectively distributed but arise as a cohesive and universal framework tied intrinsically to the status of being a person."
+        },
+        {
+          "id": "corporate-rights",
+          "title": "Corporate Rights Analysis",
+          "content": "In contrast, corporations, as artificial entities, are inherently incapable of possessing constitutional rights unless such rights are explicitly and deliberately granted to them. Unlike natural persons, whose rights exist by virtue of their existence as moral agents, corporations require a superseding legal framework to artificially confer upon them the benefits of constitutional protection."
+        },
+        {
+          "id": "constitutional-framework",
+          "title": "Constitutional Framework",
+          "content": "To attempt selective attribution of rights is to create a contradictory and incoherent legal framework. The Constitution does not provide mechanisms for partial personhood, and any attempt to parse rights selectively undermines the fundamental integrity of constitutional protections."
+        }
+      ]
+    },
+    {
+      "id": "corporate-personhood",
+      "title": "Dismantling the Doctrine of Corporate Personhood",
+      "description": "A comprehensive analysis of corporate personhood's impact on democratic principles and constitutional governance",
+      "sections": [
+        {
+          "id": "memorandum-to-manifestation",
+          "title": "From Memorandum to Manifestation",
+          "content": "Far too often, both citizens and public servants focus their energy on the symptoms of constitutional shortcomings rather than probing their fundamental causes. When these shortcomings benefit particular individuals or groups—especially those with interests at odds with the American general welfare—there is little incentive to seek genuine solutions. The deeper issues remain unexamined, compromises remain out of reach, and the public finds itself mired in disagreements over superficial outcomes instead of charting a path to genuine reform."
         }
       ]
     }
