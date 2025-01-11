@@ -12,7 +12,9 @@ export default defineStackbitConfig({
             models: [
                 {
                     name: 'discipline',
-                    type: 'data',
+                    type: 'page',
+                    urlPath: '/{id}',
+                    filePath: 'content/pages/{id}.json',
                     label: 'Discipline',
                     fields: [
                         { name: 'id', type: 'string', required: true },
@@ -22,38 +24,26 @@ export default defineStackbitConfig({
                             name: 'compositions',
                             type: 'list',
                             items: {
-                                type: 'model',
-                                models: ['composition']
+                                type: 'object',
+                                fields: [
+                                    { name: 'id', type: 'string', required: true },
+                                    { name: 'title', type: 'string', required: true },
+                                    { name: 'description', type: 'string' },
+                                    {
+                                        name: 'sections',
+                                        type: 'list',
+                                        items: {
+                                            type: 'object',
+                                            fields: [
+                                                { name: 'id', type: 'string', required: true },
+                                                { name: 'title', type: 'string', required: true },
+                                                { name: 'content', type: 'string' }
+                                            ]
+                                        }
+                                    }
+                                ]
                             }
                         }
-                    ]
-                },
-                {
-                    name: 'composition',
-                    type: 'object',
-                    label: 'Composition',
-                    fields: [
-                        { name: 'id', type: 'string', required: true },
-                        { name: 'title', type: 'string', required: true },
-                        { name: 'description', type: 'string' },
-                        {
-                            name: 'sections',
-                            type: 'list',
-                            items: {
-                                type: 'model',
-                                models: ['section']
-                            }
-                        }
-                    ]
-                },
-                {
-                    name: 'section',
-                    type: 'object',
-                    label: 'Section',
-                    fields: [
-                        { name: 'id', type: 'string', required: true },
-                        { name: 'title', type: 'string', required: true },
-                        { name: 'content', type: 'string' }
                     ]
                 }
             ]
