@@ -1,0 +1,19 @@
+{
+  "id": "theology",
+  "title": "Theology",
+  "description": "Examine religious thought and divine nature",
+  "compositions": [
+    {
+      "id": "abrahamic-religions",
+      "title": "The Divergence of Abrahamic Religions",
+      "description": "An exploration of incompatibilities between Judaism, Christianity, and Islam",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "The Abrahamic religions—Judaism, Christianity, and Islam—share deep historical and theological roots..."
+        }
+      ]
+    }
+  ]
+}

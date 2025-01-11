@@ -1,0 +1,19 @@
+{
+  "id": "philosophy",
+  "title": "Philosophy",
+  "description": "Delve into metaphysics, ethics, and epistemology",
+  "compositions": [
+    {
+      "id": "metaphysics",
+      "title": "Foundations of Metaphysics",
+      "description": "An exploration of fundamental metaphysical principles",
+      "sections": [
+        {
+          "id": "reality",
+          "title": "Nature of Reality",
+          "content": "The study of metaphysics begins with questioning the nature of reality itself..."
+        }
+      ]
+    }
+  ]
+}
