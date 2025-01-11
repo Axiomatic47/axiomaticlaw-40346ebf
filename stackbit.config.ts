@@ -7,12 +7,14 @@ export default defineStackbitConfig({
   ssgName: 'custom', // Specify your static site generator if not custom
   contentSources: [
     new GitContentSource({
+      repo: 'git@github.com:Axiomatic47/axiomaticlaw-40346ebf.git', // Replace with your Git repository URL
+      branch: 'main', // Specify the branch where your content resides
       rootPath: __dirname,
       contentDirs: ['content'], // Directory where your content files are stored
       models: [
         {
           name: 'Page',
-          type: 'page', // This indicates it's a page model
+          type: 'page', // Indicates it's a page model
           urlPath: '/{slug}', // Use the "slug" field to define URLs
           filePath: 'content/pages/{slug}.json', // Location of content files
           fields: [
