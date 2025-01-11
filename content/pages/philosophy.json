@@ -1,17 +1,17 @@
 {
   "id": "philosophy",
   "title": "Philosophy",
-  "description": "Delve into metaphysics, ethics, and epistemology",
+  "description": "Examine fundamental questions of existence and knowledge",
   "compositions": [
     {
-      "id": "metaphysics",
-      "title": "Foundations of Metaphysics",
-      "description": "An exploration of fundamental metaphysical principles",
+      "id": "epistemology",
+      "title": "The Nature of Knowledge",
+      "description": "An exploration of how we know what we know",
       "sections": [
         {
-          "id": "reality",
-          "title": "Nature of Reality",
-          "content": "The study of metaphysics begins with questioning the nature of reality itself..."
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "Epistemology, the study of knowledge, raises fundamental questions about truth and certainty..."
         }
       ]
     }

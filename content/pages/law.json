@@ -4,14 +4,14 @@
   "description": "Explore legal theory and constitutional interpretations",
   "compositions": [
     {
-      "id": "composition-1",
-      "title": "Memorandum: Parallels Between Historical Monarchical Power and Modern Corporate Personhood",
-      "description": "An analysis of how corporate personhood in modern democratic societies parallels the historical abuse of power by monarchies.",
+      "id": "constitutional-rights",
+      "title": "The Indivisibility of Constitutional Rights",
+      "description": "An analysis of the holistic nature of constitutional personhood",
       "sections": [
         {
-          "id": "section-1",
-          "title": "Introduction and Historical Context",
-          "content": "This memorandum explores how corporate personhood in modern democratic societies parallels the historical abuse of power by monarchies..."
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "At the heart of the Constitution lies the indivisible and impartial nature of personhood..."
         }
       ]
     }
