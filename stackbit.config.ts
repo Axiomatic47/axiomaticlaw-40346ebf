@@ -8,25 +8,15 @@ export default defineStackbitConfig({
   contentSources: [
     new GitContentSource({
       repo: 'git@github.com:Axiomatic47/axiomaticlaw-40346ebf.git', // Replace with your Git repository URL
-      branch: 'main', // Specify the branch where your content resides
+      branch: 'main', // Specify the branch containing your content
       rootPath: __dirname,
-      contentDirs: ['content'], // Directory where your content files are stored
+      contentDirs: ['src/data'], // Update the content directory to point to /src/data
       models: [
         {
           name: 'Page',
           type: 'page', // Indicates it's a page model
           urlPath: '/{slug}', // Use the "slug" field to define URLs
-          filePath: 'content/pages/{slug}.json', // Location of content files
-          fields: [
-            { name: 'title', type: 'string', required: true }, // Define fields for the page
-            { name: 'slug', type: 'string', required: true },  // Define slug for the page
-          ],
-        },
-        {
-          name: 'Blog',
-          type: 'page',
-          urlPath: '/blog/{slug}',
-          filePath: 'content/blog/{slug}.json',
+          filePath: 'src/data/{slug}.ts', // Adjust path based on file location
           fields: [
             { name: 'title', type: 'string', required: true },
             { name: 'slug', type: 'string', required: true },
@@ -38,24 +28,16 @@ export default defineStackbitConfig({
   devCommand: 'npm run dev', // Command to start your development server
   postInstallCommand: 'npm i --no-save @stackbit/types',
 
-  // Populate the site map for editable page URLs
   siteMap: ({ documents, models }) => {
     const pageModels = models.filter((m) => m.type === 'page');
 
     return documents
       .filter((d) => pageModels.some((m) => m.name === d.modelName))
-      .map((document) => {
-        const urlPath =
-          document.modelName === 'Page'
-            ? `/${document.fields.slug}`
-            : `/blog/${document.fields.slug}`;
-
-        return {
-          stableId: document.id,
-          urlPath,
-          document,
-          isHomePage: document.fields.slug === 'home',
-        };
-      }) as SiteMapEntry[];
+      .map((document) => ({
+        stableId: document.id,
+        urlPath: `/${document.fields.slug}`,
+        document,
+        isHomePage: document.fields.slug === 'home',
+      })) as SiteMapEntry[];
   },
 });
