@@ -4,29 +4,29 @@ import { GitContentSource } from '@stackbit/cms-git';
 export default defineStackbitConfig({
   stackbitVersion: '~0.6.0',
   nodeVersion: '18',
-  ssgName: 'custom',
+  ssgName: 'custom', // Specify your static site generator if not custom
   contentSources: [
     new GitContentSource({
-      repo: 'git@github.com:Axiomatic47/axiomaticlaw-40346ebf.git',
-      branch: 'main',
+      repo: 'git@github.com:Axiomatic47/axiomaticlaw-40346ebf.git', // Replace with your Git repository URL
+      branch: 'main', // Specify the branch where your content resides
       rootPath: __dirname,
-      contentDirs: ['content'],
+      contentDirs: ['src/data'], // Update to the correct path where your content exists
       models: [
         {
           name: 'Page',
-          type: 'page',
-          urlPath: '/{slug}',
-          filePath: 'content/pages/{slug}.json',
+          type: 'page', // Indicates it's a page model
+          urlPath: '/{slug}', // Use the "slug" field to define URLs
+          filePath: 'src/data/pages/{slug}.json', // Update to match your content structure
           fields: [
-            { name: 'title', type: 'string', required: true },
-            { name: 'slug', type: 'string', required: true },
+            { name: 'title', type: 'string', required: true }, // Define fields for the page
+            { name: 'slug', type: 'string', required: true },  // Define slug for the page
           ],
         },
         {
           name: 'Blog',
           type: 'page',
           urlPath: '/blog/{slug}',
-          filePath: 'content/blog/{slug}.json',
+          filePath: 'src/data/blog/{slug}.json',
           fields: [
             { name: 'title', type: 'string', required: true },
             { name: 'slug', type: 'string', required: true },
@@ -35,14 +35,13 @@ export default defineStackbitConfig({
       ],
     }),
   ],
-  devCommand: 'npm run dev',
-  devServer: {
-    url: 'http://localhost:8080',
-  },
-  buildCommand: 'npm run build',
+  devCommand: 'npm run dev', // Command to start your development server
   postInstallCommand: 'npm i --no-save @stackbit/types',
+
+  // Populate the site map for editable page URLs
   siteMap: ({ documents, models }) => {
     const pageModels = models.filter((m) => m.type === 'page');
+
     return documents
       .filter((d) => pageModels.some((m) => m.name === d.modelName))
       .map((document) => {
@@ -50,6 +49,7 @@ export default defineStackbitConfig({
           document.modelName === 'Page'
             ? `/${document.fields.slug}`
             : `/blog/${document.fields.slug}`;
+
         return {
           stableId: document.id,
           urlPath,
