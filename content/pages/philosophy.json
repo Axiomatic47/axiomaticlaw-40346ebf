@@ -1,0 +1,19 @@
+{
+  "id": "philosophy",
+  "title": "Philosophy",
+  "description": "Examine fundamental questions of existence and knowledge",
+  "compositions": [
+    {
+      "id": "epistemology",
+      "title": "The Nature of Knowledge",
+      "description": "An exploration of how we know what we know",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "Epistemology, the study of knowledge, raises fundamental questions about truth and certainty..."
+        }
+      ]
+    }
+  ]
+}

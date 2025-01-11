@@ -1,0 +1,19 @@
+{
+  "id": "law",
+  "title": "Law",
+  "description": "Explore legal theory and constitutional interpretations",
+  "compositions": [
+    {
+      "id": "constitutional-rights",
+      "title": "The Indivisibility of Constitutional Rights",
+      "description": "An analysis of the holistic nature of constitutional personhood",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "At the heart of the Constitution lies the indivisible and impartial nature of personhood..."
+        }
+      ]
+    }
+  ]
+}
