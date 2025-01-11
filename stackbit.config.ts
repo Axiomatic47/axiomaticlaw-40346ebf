@@ -9,8 +9,9 @@ export default defineStackbitConfig({
         new GitContentSource({
             rootPath: __dirname,
             contentDirs: ['content/pages'],
-            models: {
-                discipline: {
+            models: [
+                {
+                    name: 'discipline',
                     type: 'data',
                     label: 'Discipline',
                     fields: [
@@ -27,7 +28,8 @@ export default defineStackbitConfig({
                         }
                     ]
                 },
-                composition: {
+                {
+                    name: 'composition',
                     type: 'object',
                     label: 'Composition',
                     fields: [
@@ -44,7 +46,8 @@ export default defineStackbitConfig({
                         }
                     ]
                 },
-                section: {
+                {
+                    name: 'section',
                     type: 'object',
                     label: 'Section',
                     fields: [
@@ -53,7 +56,7 @@ export default defineStackbitConfig({
                         { name: 'content', type: 'string' }
                     ]
                 }
-            }
+            ]
         })
     ],
     devCommand: 'npm run dev',
