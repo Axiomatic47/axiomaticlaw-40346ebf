@@ -34,6 +34,15 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Crimson Text", Georgia, serif;
+    background-image: 
+      radial-gradient(1px 1px at 20px 30px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 40px 70px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 50px 160px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 90px 40px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 130px 80px, white, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 160px 120px, white, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
   }
 }
 
