@@ -1,33 +1,14 @@
 import { useParams, Link } from "react-router-dom";
+import { disciplines } from "@/data/content";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageNavigation } from "@/components/PageNavigation";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Discipline } from "@/types/content";
-import { loadContent } from "@/lib/content-loader";
 
 const DisciplinePage = () => {
   const { disciplineId } = useParams();
-  const [discipline, setDiscipline] = useState<Discipline | null>(null);
-  const [loading, setLoading] = useState(true);
+  const discipline = disciplines.find(d => d.id === disciplineId);
 
-  useEffect(() => {
-    if (disciplineId) {
-      setLoading(true);
-      loadContent(disciplineId)
-        .then(data => {
-          setDiscipline(data);
-          setLoading(false);
-        })
-        .catch(error => {
-          console.error('Error loading discipline:', error);
-          setLoading(false);
-        });
-    }
-  }, [disciplineId]);
-
-  if (loading) return <div>Loading...</div>;
   if (!discipline) return <div>Discipline not found</div>;
 
   return (

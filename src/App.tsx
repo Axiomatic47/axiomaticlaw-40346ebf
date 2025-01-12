@@ -1,31 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from '@/components/Header';
-import { StackbitProvider } from '@/components/StackbitProvider';
-import Index from '@/pages/Index';
-import Law from '@/pages/Law';
-import Philosophy from '@/pages/Philosophy';
-import Theology from '@/pages/Theology';
-import DisciplinePage from '@/pages/DisciplinePage';
-import SectionPage from '@/pages/SectionPage';
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import Index from "./pages/Index";
+import DisciplinePage from "./pages/DisciplinePage";
+import CompositionPage from "./pages/CompositionPage";
+import SectionPage from "./pages/SectionPage";
 
-function App() {
-  return (
-    <StackbitProvider>
-      <Router>
-        <div className="min-h-screen bg-background">
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <div className="min-h-screen flex flex-col">
           <Header />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/law" element={<Law />} />
-            <Route path="/philosophy" element={<Philosophy />} />
-            <Route path="/theology" element={<Theology />} />
-            <Route path="/:disciplineId" element={<DisciplinePage />} />
-            <Route path="/:disciplineId/:compositionId/:sectionId" element={<SectionPage />} />
-          </Routes>
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/:disciplineId" element={<DisciplinePage />} />
+              <Route path="/:disciplineId/:compositionId" element={<CompositionPage />} />
+              <Route path="/:disciplineId/:compositionId/:sectionId" element={<SectionPage />} />
+            </Routes>
+          </main>
         </div>
-      </Router>
-    </StackbitProvider>
-  );
-}
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;

@@ -1,35 +1,17 @@
 {
-  "type": "discipline",
   "id": "philosophy",
   "title": "Philosophy",
-  "description": "Delve into metaphysics, ethics, epistemology, and other fundamental branches of philosophical inquiry",
+  "description": "Examine fundamental questions of existence and knowledge",
   "compositions": [
     {
-      "id": "metaphysics",
-      "title": "Foundations of Metaphysics",
-      "description": "An exploration of fundamental metaphysical principles",
-      "sections": [
-        {
-          "id": "reality",
-          "title": "Nature of Reality",
-          "content": "The study of metaphysics begins with questioning the nature of reality itself. This foundational inquiry examines the fundamental structures of being, existence, and the relationship between mind and matter."
-        },
-        {
-          "id": "causation",
-          "title": "Causation and Dependencies",
-          "content": "Understanding the nature of cause and effect relationships is central to metaphysical inquiry. This exploration delves into questions of determinism, free will, and the interconnected nature of existence."
-        }
-      ]
-    },
-    {
       "id": "epistemology",
-      "title": "Theory of Knowledge",
-      "description": "An investigation into the nature and limits of human knowledge",
+      "title": "The Nature of Knowledge",
+      "description": "An exploration of how we know what we know",
       "sections": [
         {
-          "id": "knowledge-nature",
-          "title": "The Nature of Knowledge",
-          "content": "Epistemology examines what constitutes knowledge, how it is acquired, and what distinguishes justified belief from opinion. This investigation forms the foundation for understanding human cognition and the limits of certainty."
+          "id": "introduction",
+          "title": "Introduction",
+          "content": "Epistemology, the study of knowledge, raises fundamental questions about truth and certainty..."
         }
       ]
     }

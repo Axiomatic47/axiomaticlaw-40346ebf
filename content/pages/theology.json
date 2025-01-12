@@ -1,5 +1,4 @@
 {
-  "type": "discipline",
   "id": "theology",
   "title": "Theology",
   "description": "Examine religious thought and divine nature",
@@ -12,22 +11,7 @@
         {
           "id": "introduction",
           "title": "Introduction",
-          "content": "The Abrahamic religions—Judaism, Christianity, and Islam—share deep historical and theological roots. Often referred to as sibling faiths due to their shared monotheistic belief, their common patriarch Abraham, and interconnected scriptures, they nonetheless diverge in profound ways that make reconciliation of their core beliefs appear nearly impossible."
-        },
-        {
-          "id": "divergence-in-nature-of-god",
-          "title": "Divergence in the Nature of God",
-          "content": "The most fundamental divergence among the Abrahamic faiths lies in their understanding of the nature of God. Judaism emphasizes the absolute oneness and indivisibility of God. Christianity introduces the concept of the Trinity, while Islam maintains a strict understanding of God's oneness, or Tawhid."
-        },
-        {
-          "id": "role-and-identity-of-jesus",
-          "title": "The Role and Identity of Jesus",
-          "content": "Another significant point of divergence among the Abrahamic religions is the role and identity of Jesus. Christianity centers on the belief that Jesus Christ is the Son of God, while Islam regards Jesus (Isa) as one of the greatest prophets but firmly denies his divinity."
-        },
-        {
-          "id": "conclusion",
-          "title": "Conclusion",
-          "content": "Despite their shared heritage and ethical teachings, Judaism, Christianity, and Islam diverge in fundamental and often irreconcilable ways. Their differences regarding the nature of God, the role of Jesus, the status of scripture, and the concept of salvation create theological boundaries that are not easily bridged."
+          "content": "The Abrahamic religions—Judaism, Christianity, and Islam—share deep historical and theological roots..."
         }
       ]
     }
